@@ -1,0 +1,117 @@
+body {
+  font-family: 'calibri';
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: url("index.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.image-button img {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.button-container a {
+  color: #fabf81;
+  text-decoration: underline;
+  text-align: left;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center; /* Center horizontally on PC */
+  align-items: flex-end;    /* Align to the bottom on PC */
+  overflow: hidden;
+}
+
+.button-container {
+  padding: 20px;
+  margin-bottom: 300px; /* Adjust as needed */
+  margin-right: 200px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.button-container h2 {
+  margin-bottom: 50px;
+}
+
+.button-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.button-container li {
+  margin-bottom: 50px;
+}
+
+.button-container h3 {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.button-container label {
+  text-align: left;
+}
+
+.button-container a img,
+.button-container label img {
+  margin-right: 200px;
+  width: 20px;
+  height: 20px;
+}
+
+.content-container {
+  display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+      background-image: url("index-mobile.png"); 
+  }
+
+  main {
+      align-items: center; 
+  }
+
+  .button-container {
+      margin-bottom: 150px; 
+      margin-right: 100px; 
+  }
+
+  .image-button img {
+      width: 100px; 
+      height: 100px;
+  }
+}
